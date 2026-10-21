@@ -1,11 +1,7 @@
 {
-  "name": "catering-oma-netlify",
+  "name": "catering-oma-pure-html",
   "version": "1.0.0",
-  "description": "Catering Oma - Netlify Native Application",
-  "main": "index.js",
-  "scripts": {
-    "build": "echo 'No build required'"
-  },
+  "description": "Catering Oma Pure Static HTML Client",
   "dependencies": {
     "@netlify/functions": "^2.0.0"
   }

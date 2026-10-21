@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masuk · Catering Oma</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/index.html">Catering Oma</a>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/more.html">More</a>
+      <a href="/login.html" class="on">Masuk</a>
+      <a class="btn small" href="/register.html">Daftar</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="narrow">
+      <h1>Masuk</h1>
+      <div id="login-error" class="flash err" style="display:none;"></div>
+      <form id="login-form" class="form">
+        <label for="username">Username</label>
+        <input id="username" name="username" required maxlength="30" autocomplete="username">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required maxlength="128" autocomplete="current-password">
+        <button class="btn" type="submit">Masuk</button>
+      </form>
+      <p>Belum punya akun? <a href="/register.html">Daftar</a></p>
+    </section>
+  </main>
+  <footer class="footer">&copy; 2026 Catering Oma.</footer>
+</body>
+</html>

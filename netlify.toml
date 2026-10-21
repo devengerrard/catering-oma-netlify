@@ -2,13 +2,13 @@
   publish = "public"
   functions = "netlify/functions"
 
-# Redirects API requests to serverless functions
+# Redirect API calls to functions
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
 
-# Single Page Application / Fallback rewrite
+# Catch-all redirect to index.html for smooth client-side navigation
 [[redirects]]
   from = "/*"
   to = "/index.html"

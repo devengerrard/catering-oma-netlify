@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar · Catering Oma</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/index.html">Catering Oma</a>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/more.html">More</a>
+      <a href="/login.html">Masuk</a>
+      <a class="btn small" href="/register.html">Daftar</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="narrow">
+      <h1>Daftar Akun</h1>
+      <div id="reg-error" class="flash err" style="display:none;"></div>
+      <form id="register-form" class="form">
+        <label for="username">Username</label>
+        <input id="username" name="username" required minlength="3" maxlength="30">
+        <label for="full_name">Nama lengkap</label>
+        <input id="full_name" name="full_name" required maxlength="60">
+        <label for="phone">Nomor telepon</label>
+        <input id="phone" name="phone" required maxlength="25">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required minlength="8">
+        <button class="btn" type="submit">Daftar</button>
+      </form>
+      <p>Sudah punya akun? <a href="/login.html">Masuk</a></p>
+    </section>
+  </main>
+  <footer class="footer">&copy; 2026 Catering Oma.</footer>
+</body>
+</html>
